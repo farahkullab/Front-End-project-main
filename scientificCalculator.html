@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="scientificCalculator.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="./welcomePage.html"><img src="./logo/Tofan Market Part of.png" alt=""></a></div>
+        <ul>
+            <li class="il"><a href="./contact.html"><img src="./logo/house-building.png" alt="">Home</a></li>
+            <li class="il"><a href="./Todo.html"><img src="./logo/to-do-list.png" alt="">To-Do List</a></li>
+            <li class="il"><a href="./scientificCalculator.html"><img src="./logo/Scientific Calculator.png" alt="">Calculator</a></li>
+            <li class="il"><a href="./simpleCalculator.html"><img src="./logo/calculator.png" alt="">Simple Calculator</a></li>
+            <li class="il"><a id="toggleButton"><img src="./logo/color-circle.png" alt="">Background Colors</a>
+                <div class="cont_palette">
+                    <div id="colorPalette">
+                        <div class="color-circle" style="background-color: #c5a8de;"></div>
+                        <div class="color-circle" style="background-color: #e8f5e9;"></div>
+                        <div class="color-circle" style="background-color: #000000;"></div>
+                        <div class="color-circle" style="background-color: #acbfe8;"></div>
+                        <div class="color-circle" style="background-color: #dca7bf;"></div>
+                        <div class="color-circle" style="background-color: #e4d7a2;"></div>
+                        <div class="color-circle" style="background-color: #8bc4a1;"></div>
+                        <div class="color-circle" style="background-color: #b0dfeb;"></div>
+                        <div class="color-circle" style="background-color: #FFC0CB;"></div>
+                        <div class="color-circle" style="background-color: #9ACD32;"></div>
+                        <div class="color-circle" style="background-color: #e58888;"></div>
+                        <div class="color-circle" style="background-color: #FFFFFF;"></div>
+                    </div>
+                </div>
+            </li> 
+            <li>
+                <select id="fontSelect">
+                    <option disabled selected>Choose the font family</option>
+                    <option value="'Arial', sans-serif">Arial</option>
+                    <option value="'Courier New', monospace">Courier New</option>
+                    <option value="'Georgia', serif">Georgia</option>
+                    <option value="'Times New Roman', serif">Times New Roman</option>
+                    <option value="'Verdana', sans-serif">Verdana</option>
+                </select> 
+            </li>
+        </ul>
+    </header>
+
+    <div id="colorPalette">
+        <div class="color-circle" style="background-color: #c5a8de;"></div>
+        <div class="color-circle" style="background-color: #e8f5e9;"></div>
+        <div class="color-circle" style="background-color: #000000;"></div>
+        <div class="color-circle" style="background-color: #acbfe8;"></div>
+        <div class="color-circle" style="background-color: #dca7bf;"></div>
+        <div class="color-circle" style="background-color: #e4d7a2;"></div>
+        <div class="color-circle" style="background-color: #8bc4a1;"></div>
+        <div class="color-circle" style="background-color: #b0dfeb;"></div>
+        <div class="color-circle" style="background-color: #ca8389;"></div>
+        <div class="color-circle" style="background-color: #FFC0CB;"></div>
+        <div class="color-circle" style="background-color: #9ACD32;"></div>
+        <div class="color-circle" style="background-color: #FFFFFF;"></div>
+    </div>
+    <div class="container">
+    <div id="nav-placeholder"></div>
+
+    <div class="calculator">
+        <input type="text" id="result" disabled value="0">
+        <div class="buttons">
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button class="operation" onclick="chooseOperation('+')">+</button>
+
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button class="operation" onclick="chooseOperation('-')">-</button>
+
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button class="operation" onclick="chooseOperation('*')">×</button>
+
+            <button onclick="appendNumber(0)">0</button>
+            <button class="operation" onclick="chooseOperation('/')">÷</button>
+            <button class="operation" onclick="chooseOperation('^')">^</button>
+            <button class="operation" onclick="storeFactorial()">n!</button>
+
+            <button class="clear" onclick="clearResult()">Clear</button>
+            <button class="equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>&copy; 2024 Tufan Market. All rights reserved.</p>
+</footer>
+    <script src="scientificCalculator.js"></script>
+</body>
+</html>

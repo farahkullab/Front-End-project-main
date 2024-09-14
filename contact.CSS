@@ -1,0 +1,194 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s;
+    margin: 0;
+    padding: 0;
+
+}
+.cont_palette{
+display: flex;
+justify-content: center;
+}
+#colorPalette {
+    display: none;
+    grid-template-columns: repeat(3, 20px);
+    gap: 5px;
+    border-radius: 10px;
+    justify-content: end;
+    margin-top: 3px;
+    padding: 3px;
+    width: 75px;
+    background-color: white;
+}
+
+
+#colorPalette h3 {
+
+    grid-column: span 6;
+    margin-bottom: 10px;
+}
+
+.color-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: #333 solid 1px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-circle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#fontSelect{
+    padding: 10px;
+    position: relative;
+    top: 5px;
+    border-radius: 10px;
+    border: #1b5e20 solid 3px;
+}
+
+
+
+#fontSelect:hover{
+background-color: #ccc;
+}
+header {
+    background-color:#333;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    margin-left: 20px;
+    height: 100px;
+    padding-left: 15px;
+
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+header ul li button{
+margin-top: 10px;
+padding: 10px;
+border-radius: 5px;
+position: relative;
+bottom: 5px;
+}
+header ul li {
+
+    margin-left: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}
+li{
+    transition: padding 0.5s;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+header ul li button{
+    
+    padding: 10px 15px;
+    width: 53.5px;
+    height: 41.5px;
+}
+a img{
+    
+    height: 27.5px;
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+.logo a img{
+    position: relative;
+    transition: padding 0.5s;
+}
+.logo a img:hover{
+    padding: 10px;
+}
+.il:hover{
+    background-color: #eee;
+    
+}
+li:hover{
+    padding: 10px;
+}
+a:hover{
+    color: #333;
+}
+
+
+
+form { 
+    background-color: white;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px 20px 30px 20px;
+    border: 1px solid #4caf50;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="tel"] {
+    width: 393.2px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+}
+input:hover{
+    background-color: #ccc;
+}
+.check{
+    display: flex;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4caf50;
+    
+}
+.reset1{
+    background-color: #2e7d32;
+    color: white;
+}
+
+.reset1:hover{
+    background-color: #1b5e20;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
